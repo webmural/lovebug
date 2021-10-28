@@ -4,21 +4,27 @@
 }
 
 :root {
-  color: #ccc;
-  background: #111;
+  color: mistyrose;
+  background: darkviolet;
 }
 
-:link {
-  color: hotpink;
+@media (prefers-color-scheme: dark) {
+  :root {
+    background: #70a;
+  }
 }
 
-:visited {
-  color: violet;
+@media (prefers-contrast: less) {
+  :root {
+    color: pink;
+  }
 }
 
-:focus {
-  text-shadow:
-    -5px 0 0 plum,
-    3px 3px 0 plum,
-    3px -3px 0 plum;
+:any-link {
+  color: lightsalmon;
+}
+
+mark {
+  color: black;
+  background: salmon;
 }
